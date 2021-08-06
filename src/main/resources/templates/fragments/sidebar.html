@@ -1,0 +1,71 @@
+<!-- 
+  サイドバー
+-->
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+  <!-- 部品：サイドバー -->
+  <th:block th:fragment="sidebar">
+    <!-- オフキャンバスメニュー -->
+    <nav class="offcanvas offcanvas-start offcanvas__bg text-white h-100" data-bs-scroll="true" data-bs-backdrop="true"
+      tabindex="-1" id="offcanvasScrolling">
+      <!-- オフキャンバス：ヘッダ -->
+      <header class="offcanvas-header">
+        <!-- サイドバー：タイトル -->
+        <h4 class="offcanvas-title">
+          <a th:href="@{/}" class="text-white">
+            <span class="d-inline-block me-1" style="transform: rotate(-15deg)">
+              <i class="bi bi-credit-card-2-front-fill fs-3"></i>
+            </span>
+            社員情報
+          </a>
+        </h4>
+      </header>
+      <!-- オフキャンバス：ボディ -->
+      <section class="offcanvas-body pt-0">
+        <hr class="mt-1">
+        <!-- メニュー -->
+        <ul class="navbar-nav">
+          <!-- メニュー：社員一覧 -->
+          <li class="nav-item">
+            <a th:href="@{/}" class="nav-link text-white">
+              <i class="bi bi-table me-2"></i>
+              社員一覧
+            </a>
+          </li>
+          <!-- メニュー：社員登録 -->
+          <li class="nav-item">
+            <a th:href="@{/add}" class="nav-link text-white">
+              <i class="bi bi-person-fill me-2"></i>
+              社員登録
+            </a>
+          </li>
+        </ul>
+        <!-- オフキャンバス：閉じるボタン（画面が小さい時に表示） -->
+        <hr>
+        <div class="text-center d-lg-none">
+          <button type="button" class="offcanvas__btn--circle btn-light" data-bs-dismiss="offcanvas">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+        </div>
+      </section>
+    </nav>
+  </th:block>
+
+  <!-- 部品：サイドバーを表示するトグルボタン -->
+  <!-- 画面が小さい時のみ表示 -->
+  <th:block th:fragment="toggler">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- トグルボタン -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </th:block>
+</body>
+
+</html>
