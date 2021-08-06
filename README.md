@@ -41,8 +41,8 @@
 <img width="1200" src="https://user-images.githubusercontent.com/59589496/128456782-4dd5d534-c194-43ec-b36e-eee9ecf186c5.png">  
 
 ### オフキャンバスメニューのレスポンシブ対応    
-<img width="800" src="https://user-images.githubusercontent.com/59589496/128457083-c99d8724-6457-414c-ba2e-ab9adf855d92.png">  
-<img width="800" src="https://user-images.githubusercontent.com/59589496/128457188-5cc6bd4a-6977-41bc-9d3d-0300bae0ce89.png">  
+<img width="600" src="https://user-images.githubusercontent.com/59589496/128457083-c99d8724-6457-414c-ba2e-ab9adf855d92.png">  
+<img width="600" src="https://user-images.githubusercontent.com/59589496/128457188-5cc6bd4a-6977-41bc-9d3d-0300bae0ce89.png">  
 
 ## フォルダ構成
 
