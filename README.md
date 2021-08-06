@@ -52,6 +52,7 @@
 
 * Spring Boot DevTools
 * Thymeleaf
+* Thymeleaf Layout Dialect
 * Spring Web
 * Validation
 * Spring Data JPA
